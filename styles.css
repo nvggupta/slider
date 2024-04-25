@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  animation: slide 20s infinite backwards;
+}
+
+.item {
+  flex: 0 0 auto;
+  margin-right: 20px; 
+  text-align: center;
+  text-decoration: none;
+}
+
+.item img {
+  width: 100%; 
+  height: auto;
+}
+
+@media (max-width: 428px) {
+  .item {
+    margin-right: 10px; 
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.advertise img {
+  width: 100vw;
+  margin-top: 10px;
+}
+
+.policy img {
+  width: 100vw;
+  margin-top: 10px;
+  height: 8rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header > a {
+  text-decoration: none;
+  color: purple;
+  font-size: 1rem;
+}
+
+.daily-deal {
+  padding: 1rem;
+}
+
+.timer {
+  margin-top: 2rem;
+  display: flex;
+}
+
+.timer p {
+  bottom: 15px;
+}
+
+.timer-box {
+  margin-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 3px;
+  border: 2px solid red;
+  height: 20px;
+  width: 6rem;
+  background-color: blanchedalmond;
+}
+
+.timer-box p {
+  font-size: 0.8rem;
+  margin-left: 7px;
+  color: red;
+}
+
+.timer-box img {
+  bottom: 15px;
+  width: 20px;
+}
